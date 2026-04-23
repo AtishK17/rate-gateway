@@ -16,7 +16,7 @@ built in C++20 using Drogon, Redis, and PostgreSQL.
 | Token bucket   | 94,000 req/s | 0.8ms       |
 | Sliding window | 81,000 req/s | 1.1ms       |
 
-Tested with `wrk -t8 -c200 -d30s` on a Ryzen 5 / 16GB RAM.
+Tested with `wrk -t8 -c200 -d30s` on a Intel 7 / 16GB RAM.
 
 ## Tech stack
 C++20 · Drogon · Redis · PostgreSQL · CMake
@@ -33,3 +33,6 @@ cp config.example.json config.json   # fill in your DB/Redis URLs
 cmake -B build && cmake --build build
 ./build/rate-gateway
 \`\`\`
+
+## Author
+- Atish Kundu
