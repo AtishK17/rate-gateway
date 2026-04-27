@@ -62,7 +62,7 @@ ApiKeyRecord ApiKeyManager::createKey(const ApiKeyRecord& record) {
 	);
 	{
 		std::unique_lock lock(mutex_);
-		cache_(newRecord.key] = newRecord;
+		cache_[newRecord.key] = newRecord;
 	}
 	LOG_INFO << "[AiKeyManager] created key = " << newRecord.key << " algo = " << newRecord.algorithm;
 	return newRecord;
