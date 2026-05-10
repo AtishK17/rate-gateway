@@ -27,7 +27,7 @@ C++20 · Drogon · Redis · PostgreSQL · CMake
 ## Getting started
 \`\`\`bash
 # prerequisites: cmake, redis-server, postgresql
-git clone git@github.com:yourusername/rate-gateway.git
+git clone git@github.com:AtishK17/rate-gateway.git
 cd rate-gateway
 cp config.example.json config.json   # fill in your DB/Redis URLs
 cmake -B build && cmake --build build
